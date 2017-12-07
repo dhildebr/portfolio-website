@@ -1,0 +1,8 @@
+./examples/
+./extras/
+./logs/
+
+./httpserver.log
+./httpserver.pid
+./parameters_8000.py
+./welcome.w2p
