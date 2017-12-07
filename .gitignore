@@ -2,6 +2,7 @@
 ./extras/
 ./logs/
 
+./CHANGELOG
 ./httpserver.log
 ./httpserver.pid
 ./parameters_8000.py
