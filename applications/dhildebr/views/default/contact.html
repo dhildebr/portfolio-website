@@ -1,0 +1,28 @@
+{{extend 'layout.html'}}
+
+{{block title}}
+  {{title_prefix = 'Contact Me'}}
+{{end}}
+
+<p class="contact-info">
+  I can be contacted at:<br />
+  <span class="email">moc.liamg&commat;tdnarbedlih.s.leinad</span><br />
+  <span class="hidden-if-js">Javascript must be enabled to add to the clipboard.<br /></span>
+  <span class="hidden-if-no-js">Click my E-mail address to copy it to your clipboard.</span>
+  <span class="copy-confirmation"><br />E-mail copied to clipboard</span>
+</p>
+
+<div class="social-links">
+  <a href="https://www.linkedin.com/in/daniel-s-hildebrandt/" target="_blank">
+    <img src="{{=URL('static', 'images/social-links/SocialMedia_LinkedIn.png')}}"
+         class="social-link" height="33px" />
+  </a>
+  <a href="https://github.com/dhildebr" target="_blank">
+    <img src="{{=URL('static', 'images/social-links/SocialMedia_GitHub.png')}}"
+         class="social-link" height="33px" />
+  </a>
+</div>
+
+{{block end_js}}
+  <script src="{{=URL('static', 'js/email-to-clipboard.js')}}"></script>
+{{end}}

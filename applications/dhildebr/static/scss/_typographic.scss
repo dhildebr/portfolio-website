@@ -1,0 +1,140 @@
+@import "colors";
+@import "mixins";
+
+h1
+{
+  border: 0;
+  color: $color-header;
+  display: block;
+  padding: 0;
+  width: 80%;
+  
+  font:
+  {
+    family: "Cormorant Infant", serif;
+    size: 2.5pc;
+    weight: 700;
+  }
+  
+  margin:
+  {
+    top: 0.5pc;
+    bottom: 1pc;
+    left: 0;
+    right: 0;
+  }
+}
+
+h2
+{
+  @extend h1;
+  
+  font:
+  {
+    family: "Cormorant Infant", serif;
+    size: 2pc;
+    weight: 700;
+  }
+}
+
+p
+{
+  color: $color-body;
+  padding: 0;
+  
+  font:
+  {
+    family: "Roboto", sans-serif;
+    size: 1.25pc;
+    weight: 400;
+  }
+  
+  margin:
+  {
+    top: 0;
+    bottom: 2pc;
+    left: 0;
+    right: 0;
+  }
+}
+
+a,
+a:link,
+a:visited
+{
+  color: $color-link-normal;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover
+{
+  color: $color-link-hover;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+a:active
+{
+  color: $color-link-active;
+  font-weight: 500;
+  left: 1px;
+  position: relative;
+  text-decoration: underline;
+  top: 1px;
+}
+
+b,
+strong
+{
+  font-weight: bold;
+}
+
+i,
+em
+{
+  font-style: italic;
+  
+  i,
+  em
+  {
+    font-style: normal;
+  }
+}
+
+::selection
+{
+  background: $color-selection-background;
+  color: $color-selection-text;
+}
+
+::-moz-selection
+{
+  background: $color-selection-background;
+  color: $color-selection-text;
+}
+
+img
+{
+  border: 0;
+  padding: 0;
+  margin: 10px;
+  max-width: 100%;
+  
+  @include user-select(none);
+}
+
+img.float-left   { float: left;   }
+img.float-center { float: center; }
+img.float-right  { float: right;  }
+
+video
+{
+  border: 1px solid $color-borders;
+  float: left;
+  margin: 0;
+  padding: 0;
+  
+  @include width-bounds(360px, 1920px, 50%);
+}

@@ -1,0 +1,92 @@
+@import "colors";
+@import "mixins";
+
+p.contact-info
+{
+  color: $color-body;
+  padding: 0;
+  text-align: center;
+  width: 85%;
+  
+  font:
+  {
+    family: "Roboto", sans-serif;
+    size: 1.25pc;
+    weight: 400;
+  }
+  
+  margin:
+  {
+    top: 5vh;
+    bottom: 1pc;
+    left: auto;
+    right: auto;
+  }
+}
+
+span.email
+{
+  color: $color-link-normal;
+  direction: rtl;
+  font-weight: 500;
+  text-decoration: none;
+  unicode-bidi: bidi-override;
+  
+  @include user-select(none);
+  
+  &:hover
+  {
+    color: $color-link-hover;
+    text-decoration: underline;
+  }
+  
+  &:active
+  {
+    color: $color-link-active;
+    left: 1px;
+    position: relative;
+    text-decoration: underline;
+    top: 1px;
+  }
+}
+
+span.copy-confirmation
+{
+  display: none;
+  font-size: 1pc;
+}
+
+div.social-links
+{
+  border: 0;
+  padding: 0;
+  text-align: center;
+  width: 90%;
+  
+  margin:
+  {
+    top: 5vh;
+    bottom: 0;
+    left: auto;
+    right: auto;
+  }
+  
+  &>a
+  {
+    outline: 0;
+    
+    &>img.social-link
+    {
+      border: 0;
+      padding: 0;
+      
+      margin:
+      {
+        top: 5px;
+        bottom: 5px;
+        left: 15px;
+        right: 15px;
+      }
+    }
+  }
+}

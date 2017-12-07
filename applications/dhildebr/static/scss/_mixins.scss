@@ -1,0 +1,40 @@
+@mixin width-bounds($min, $max, $target: auto)
+{
+  min-width: $min;
+  max-width: $max;
+  width: $target;
+}
+
+@mixin height-bounds($min, $max, $target: auto)
+{
+  min-height: $min;
+  max-height: $max;
+  height: $target;
+}
+
+@mixin background-linear-gradient($args...)
+{
+  background:   -moz-linear-gradient($args);
+  background:    -ms-linear-gradient($args);
+  background:     -o-linear-gradient($args);
+  background:-webkit-linear-gradient($args);
+  background:        linear-gradient($args);
+}
+
+@mixin border-image($args...)
+{
+     -moz-border-image: $args;
+      -ms-border-image: $args;
+       -o-border-image: $args;
+  -webkit-border-image: $args;
+          border-image: $args;
+}
+
+@mixin user-select($state)
+{
+     -moz-user-select: $state;
+      -ms-user-select: $state;
+       -o-user-select: $state;
+  -webkit-user-select: $state;
+          user-select: $state;
+}

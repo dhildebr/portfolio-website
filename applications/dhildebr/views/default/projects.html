@@ -1,0 +1,76 @@
+{{extend 'layout.html'}}
+
+{{block title}}
+  {{title_prefix = 'Projects'}}
+{{end}}
+
+<section>
+  <ul class="projects-page-list">
+    
+    <li class="projects-page-list-item">
+      <h1 class="project-title">Children of &#x00C0;&#x1E63;&#x1EB9;</h1>
+      <p class="project-description">
+        <img src="{{=URL('static', 'images/ProjectLogo_ChildrenOfAse@1x.png')}}"
+             srcset="{{=URL('static', 'images/ProjectLogo_ChildrenOfAse@1x.png')}} 1x,
+                     {{=URL('static', 'images/ProjectLogo_ChildrenOfAse@2x.png')}} 2x"
+             class="project-logo" width="200px"
+             alt="A logo representing Children of &#x00C0;&#x1E63;&#x1EB9;" />
+        
+        My senior year at UC Santa Cruz entailed a year-long series of classes centering about the development of a polished game: <i>Children of &#x00C0;&#x1E63;&#x1EB9;</i>, a top-down social dynamics RPG set within the Yoruba culture of what today is Nigeria. I was one of nine developers, working with a core team of around five artists &ndash; a total of 27 people contributed in all. I handled much of the OpenGL rendering, asset integration, and tutorial design. We spent twenty weeks in all on the game, divided into two-week sprints and holding Scrum three times each week.
+      </p>
+      <p class="project-description">
+        <a href="{{=URL('children_of_ase')}}">Read more...</a><br />
+        <a href="https://childrenofase.wordpress.com/" target="_blank">Visit the <i>Children of &#x00C0;&#x1E63;&#x1EB9;</i> website</a>
+      </p>
+    </li>
+    
+    <li class="projects-page-list-item">
+      <h1 class="project-title">Daedra-tasitc Rune Spells</h1>
+      <p class="project-description">
+        <img src="{{=URL('static', 'images/ProjectLogo_DaedraTasticRuneSpells@1x.png')}}"
+             srcset="{{=URL('static', 'images/ProjectLogo_DaedraTasticRuneSpells@1x.png')}} 1x,
+                     {{=URL('static', 'images/ProjectLogo_DaedraTasticRuneSpells@2x.png')}} 2x"
+             class="project-logo" width="200px"
+             alt="A logo representing the Daedra-tastic Rune Spells mod" />
+        
+        A mod made for <i>Skyrim: Special Edition</i> to replace the textures used by the rune spells, cast on a surface to deal damage or confer an effect when an enemy comes near. I made the textures myself in GIMP, and exported diffuse, normal, and parallax maps as BC7 <abbr title="DirectDraw Surface">.dds</abbr> images. I then wrote an XML installation script to choose resolution options and optional add-ons, and authored the Nexus Mods page. The mod and all its components are released under the <abbr title="Creative Commons Attribution">CC-BY</abbr> 4.0 license.
+      </p>
+      <p class="project-description">
+        <a href="https://www.nexusmods.com/skyrimspecialedition/mods/6359" target="_blank">Visit the Nexus Mods page</a>
+      </p>
+    </li>
+    
+    <li class="projects-page-list-item">
+      <h1 class="project-title">OpenGov</h1>
+      <p class="project-description">
+        <img src="{{=URL('static', 'images/ProjectLogo_OpenGov@1x.png')}}"
+             srcset="{{=URL('static', 'images/ProjectLogo_OpenGov@1x.png')}} 1x,
+                     {{=URL('static', 'images/ProjectLogo_OpenGov@2x.png')}} 2x"
+             class="project-logo" height="200px"
+             alt="A logo representing OpenGov" />
+        
+        OpenGov is a Ruby on Rails project for scraping a parsing publicly available government statistics data into a queryable PostqreSQL database. As part of a team of four, I helped design the scraping and parsing logic to convert tabular data into a JSON-like format for storage. This took place over the course of five weeks, with an agile development cycle comprising one-week sprints.
+      </p>
+      <p class="project-description">
+        <a href="https://github.com/mmwebster/opengov-api" target="_blank">View the GitHub repository</a>
+      </p>
+    </li>
+    
+    <li class="projects-page-list-item">
+      <h1 class="project-title">Rosetta Run</h1>
+      <p class="project-description">
+        <img src="{{=URL('static', 'images/ProjectLogo_RosettaRun@1x.png')}}"
+             srcset="{{=URL('static', 'images/ProjectLogo_RosettaRun@1x.png')}} 1x,
+                     {{=URL('static', 'images/ProjectLogo_RosettaRun@2x.png')}} 2x"
+             class="project-logo" width="200px"
+             alt="A logo representing Rosetta Run" />
+        
+        An endless runner game played directly from the browser, designed with the Phaser Javascript game engine. Inspired by the European Space Agency's 2014 Rosetta mission, the player avoids various space-themed obstacles and gathers "data samples" for score. Alongside a team of three others, I implemented movement, animation, and obstacle spawning mechanics. Our graphical assets were each hand-drawn on paper, then scaned and digitally traced.
+      </p>
+      <p class="project-description">
+        <a href="{{=URL('rosetta_run')}}">Play <i>Rosetta Run</i> here</a>
+      </p>
+    </li>
+    
+  </ul>
+</section>

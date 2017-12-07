@@ -1,0 +1,121 @@
+@import "colors";
+
+div.university-info
+{
+  padding: 0;
+  
+  margin:
+  {
+    top: 0;
+    bottom: 0.5pc;
+    left: 0;
+    right: 0;
+  }
+  
+  &>span.university-info
+  {
+    color: $color-body;
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% / 3);
+    
+    font:
+    {
+      family: "Roboto", sans-serif;
+      size: 1.25pc;
+      weight: 700;
+    }
+  }
+  
+  &>span.university-info-name      { text-align: left;   }
+  &>span.university-info-major     { text-align: center; }
+  &>span.university-info-timeframe { text-align: right;  }
+}
+
+ul.skills-page-list
+{
+  padding: 0;
+  
+  margin:
+  {
+    top: 0;
+    bottom: 2pc;
+    left: 0;
+    right: 0;
+  }
+  
+  &>li.skills-page-list-item
+  {
+    color: $color-body;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    text-align: left;
+    vertical-align: top;
+    width: 100%;
+    
+    font:
+    {
+      family: "Roboto", sans-serif;
+      size: 1.25pc;
+      weight: 500;
+    }
+    
+    padding:
+    {
+      top: 0.5pc;
+      bottom: 0.5pc;
+      left: 1pc;
+      right: 1pc;
+    }
+  }
+  
+  &>li.classes-list-item
+  {
+    @extend li.skills-page-list-item;
+    width: calc(100% / 3);
+  }
+  
+  &>li.languages-list-item
+  {
+    @extend li.skills-page-list-item;
+    width: 25%;
+  }
+  
+  &>li.tools-list-item
+  {
+    @extend li.skills-page-list-item;
+    width: 25%;
+  }
+  
+  ul.skills-page-sublist
+  {
+    margin: 0;
+    padding: 0;
+    
+    &>li.skills-page-sublist-item
+    {
+      color: $color-body;
+      display: block;
+      list-style: none;
+      margin: 0;
+      text-align: left;
+      vertical-align: top;
+      
+      font:
+      {
+        family: "Roboto", sans-serif;
+        size: 1pc;
+        weight: 300;
+      }
+      
+      padding:
+      {
+        top: 0;
+        bottom: 0;
+        left: 0.5pc;
+        right: 0.5pc;
+      }
+    }
+  }
+}

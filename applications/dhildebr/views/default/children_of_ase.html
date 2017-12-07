@@ -1,0 +1,31 @@
+{{extend 'layout.html'}}
+
+{{block title}}
+  {{title_prefix = u'Children of \u00C0\u1E63\u1EB9'}}
+{{end}}
+
+<video class="children-of-ase-trailer" controls autoplay muted>
+  <source src="{{=URL('static', 'videos/GameTrailer_ChildrenOfAse.webm')}}" type="video/webm" />
+  <source src="{{=URL('static', 'videos/GameTrailer_ChildrenOfAse.mp4')}}" type="video/mp4" />
+  The video could not be loaded.
+</video>
+
+<p>
+  My senior year at UC Santa Cruz entailed a year-long series of classes centering about the development of a polished game: Children of &#x00C0;&#x1E63;&#x1EB9;, a top-down social dynamics RPG set within the Yoruba culture of what today is Nigeria. I was one of nine developers, working with a core team of around five artists &ndash; a total of 27 people contributed in all. I handled much of the OpenGL rendering, asset integration, and tutorial design. We spent twenty weeks in all on the game, divided into two-week sprints and holding Scrum three times each week.
+</p>
+<p>
+  Unique among the games to come out of the class of 2017, we chose to build our own engine with Visual C++. At the annual Sammy Awards for undergraduate and graduate games at UCSC, we were a runner-up for the technical achievement award.
+</p>
+<p>
+  Though the game's graphics are two-dimensional, all the human characters were animated as 3D meshes by Jude, our main 3D artist, to be rendered into 2D spritesheets. This gave the characters a consistent look regardless of the direction they might face.
+</p>
+<p>
+  Finally, we also consulted with a babalawo &ndash; a Yoruba spiritual leader &ndash; to ensure our representation of the Yoruba world was accurate and culturally sensitive.
+</p>
+
+<p>
+  <a href="https://childrenofase.wordpress.com/" target="_blank">Visit the Children of &#x00C0;&#x1E63;&#x1EB9; website</a>
+</p>
+<p>
+  <a href="{{=URL('projects')}}">Back to projects...</a>
+</p>
