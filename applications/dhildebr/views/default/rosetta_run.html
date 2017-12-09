@@ -16,15 +16,17 @@
   <script src="{{=URL('static', 'rosetta-run/src/game.js')}}"        type="text/javascript"></script>
 {{end}}
 
-<div class="rosetta-run-frame" id="game-frame">
+<div class="rosetta-run-frame hidden-if-no-js" id="game-frame">
   <!-- Game goes here -->
 </div>
+<img src="{{=URL('static', 'rosetta-run/assets/menus/Start_Screen.png')}}"
+     class="rosetta-run-still-image" />
 
 <p>
    An endless runner game played directly from the browser, designed with the Phaser Javascript game engine. Inspired by the European Space Agency's 2014 Rosetta mission, the player avoids various space-themed obstacles and gathers "data samples" for score. Alongside a team of three others, I implemented movement, animation, and obstacle spawning mechanics. Our graphical assets were each hand-drawn on paper, then scanned and digitally traced.
 </p>
 <p>
-  You can play Rosetta Run right here in your browser. Note that the game is a fixed 400&times;600 pixels, and relies on the player having a traditional keyboard and mouse. Accordingly, it (and this page) may not cooperate with tablets of phones.
+  You can play Rosetta Run right here in your browser. Note that the game is a fixed 400&times;600 pixels, and relies on the player having a traditional keyboard and mouse. Accordingly, it (and this page) may not cooperate with tablets of phones. Browsers that support it will show a still image instead of the game if your device lacks a mouse, or if your screen is on the small side. Javascript must be enabled.
 </p>
 <p>
   <a href="{{=URL('projects')}}">Back to projects...</a>

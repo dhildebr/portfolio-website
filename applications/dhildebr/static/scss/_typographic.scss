@@ -148,9 +148,6 @@ img.self-portrait
 video
 {
   border: 1px solid $color-borders;
-  float: left;
-  margin: 0;
+  margin: 20px;
   padding: 0;
-  
-  @include width-bounds(360px, 1920px, 50%);
 }
