@@ -62,18 +62,22 @@
       
       <nav>
         <ul class="nav-list">
-          <li class="nav-item" id="nav-home">
-            <a class="nav-link" href="{{=URL('index')}}">Home</a>
-          </li>
-          <li class="nav-item" id="nav-skills">
-            <a class="nav-link" href="{{=URL('skills')}}">Skills</a>
-          </li>
-          <li class="nav-item" id="nav-projects">
-            <a class="nav-link" href="{{=URL('projects')}}">Projects</a>
-          </li>
-          <li class="nav-item" id="nav-contact">
-            <a class="nav-link" href="{{=URL('contact')}}">Contact</a>
-          </li>
+          <div class="nav-list-group">
+            <li class="nav-item" id="nav-home">
+              <a class="nav-link" href="{{=URL('index')}}">Home</a>
+            </li>
+            <li class="nav-item" id="nav-skills">
+              <a class="nav-link" href="{{=URL('skills')}}">Skills</a>
+            </li>
+          </div>
+          <div class="nav-list-group">
+            <li class="nav-item" id="nav-projects">
+              <a class="nav-link" href="{{=URL('projects')}}">Projects</a>
+            </li>
+            <li class="nav-item" id="nav-contact">
+              <a class="nav-link" href="{{=URL('contact')}}">Contact</a>
+            </li>
+          </div>
         </ul>
       </nav>
       

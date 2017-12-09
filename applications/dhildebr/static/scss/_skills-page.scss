@@ -3,33 +3,80 @@
 div.university-info
 {
   padding: 0;
+  width: 90%;
   
   margin:
   {
     top: 0;
     bottom: 0.5pc;
-    left: 0;
-    right: 0;
+    left: 1pc;
+    right: 1pc;
   }
   
-  &>span.university-info
+  &>div.university-info-item
   {
     color: $color-body;
     display: inline-block;
+    margin: 0;
     vertical-align: top;
-    width: calc(100% / 3);
+    width: 50%;
     
     font:
     {
+      color: $color-body;
       family: "Roboto", sans-serif;
       size: 1.25pc;
       weight: 700;
     }
   }
   
-  &>span.university-info-name      { text-align: left;   }
-  &>span.university-info-major     { text-align: center; }
-  &>span.university-info-timeframe { text-align: right;  }
+  &>div.university-info-name
+  {
+    @extend div.university-info-item;
+    text-align: left;
+    
+    @media only screen and (max-width: 960px)
+    {
+      text-align: left;
+      width: 100%;
+    }
+  }
+  
+  &>div.university-info-major
+  {
+    @extend div.university-info-item;
+    text-align: right;
+    
+    @media only screen and (max-width: 960px)
+    {
+      text-align: left;
+      width: 100%;
+    }
+  }
+  
+  &>div.university-info-timeframe
+  {
+    @extend div.university-info-item;
+    text-align: left;
+    
+    @media only screen and (max-width: 960px)
+    {
+      text-align: left;
+      width: 100%;
+    }
+  }
+  
+  &>div.university-info-college
+  {
+    @extend div.university-info-item;
+    text-align: right;
+    
+    @media only screen and (max-width: 960px)
+    {
+      text-align: left;
+      width: 100%;
+    }
+  }
 }
 
 ul.skills-page-list
@@ -74,18 +121,59 @@ ul.skills-page-list
   {
     @extend li.skills-page-list-item;
     width: calc(100% / 3);
+    
+    @media only screen and (max-width: 1280px)
+    {
+      width: 50%;
+    }
+    
+    @media only screen and (max-width: 800px)
+    {
+      padding-bottom: 0;
+      width: 100%;
+    }
   }
   
   &>li.languages-list-item
   {
     @extend li.skills-page-list-item;
     width: 25%;
+    
+    @media only screen and (max-width: 1280px)
+    {
+      width: calc(100% / 3);
+    }
+    
+    @media only screen and (max-width: 960px)
+    {
+      width: 50%;
+    }
+    
+    @media only screen and (max-width: 600px)
+    {
+      width: 100%;
+    }
   }
   
   &>li.tools-list-item
   {
     @extend li.skills-page-list-item;
     width: 25%;
+    
+    @media only screen and (max-width: 1280px)
+    {
+      width: calc(100% / 3);
+    }
+    
+    @media only screen and (max-width: 960px)
+    {
+      width: 50%;
+    }
+    
+    @media only screen and (max-width: 600px)
+    {
+      width: 100%;
+    }
   }
   
   ul.skills-page-sublist

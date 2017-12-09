@@ -111,80 +111,88 @@ nav
     padding: 0;
     margin: 0;
     
-    &>li.nav-item
+    &>div.nav-list-group
     {
+      border: 0;
       display: inline-block;
-      height: 3pc;
-      list-style: none;
       padding: 0;
       margin: 0;
       
-      &>a.nav-link,
-      &>a.nav-link:link,
-      &>a.nav-link:visited
+      &>li.nav-item
       {
-        color: $color-nav-normal;
-        cursor: pointer;
-        letter-spacing: 0.2pc;
-        outline: 0;
+        display: inline-block;
+        height: 3pc;
+        list-style: none;
+        padding: 0;
         margin: 0;
-        text-align: center;
-        text-decoration: none;
-        vertical-align: middle;
         
-        @include user-select(none);
-        
-        border:
+        &>a.nav-link,
+        &>a.nav-link:link,
+        &>a.nav-link:visited
         {
-          top: 1px solid transparent;
-          bottom: 1px solid transparent;
-          left: 3px solid transparent;
-          right: 3px solid transparent;
-        }
-        
-        font:
-        {
-          family: "Cormorant SC", serif;
-          size: 2pc;
-          weight: 700;
-        }
-        
-        padding:
-        {
-          top: 0;
-          bottom: 0;
-          left: 1pc;
-          right: 1pc;
-        }
-        
-        &:hover,
-        &:focus
-        {
-          background: #000000;
-          color: $color-nav-hover;
+          color: $color-nav-normal;
+          cursor: pointer;
+          letter-spacing: 0.2pc;
+          outline: 0;
+          margin: 0;
+          text-align: center;
+          text-decoration: none;
+          vertical-align: middle;
+          
+          @include user-select(none);
           
           border:
           {
-            top: 1px solid $color-nav-hover;
-            bottom: 1px solid $color-nav-hover;
-            left: 3px double $color-nav-hover;
-            right: 3px double $color-nav-hover;
-            radius: 25% 15%;
+            top: 1px solid transparent;
+            bottom: 1px solid transparent;
+            left: 3px solid transparent;
+            right: 3px solid transparent;
           }
-        }
-        
-        &:active
-        {
-          background: #000000;
-          color: $color-nav-active;
           
-          border:
+          font:
           {
-            top: 1px solid $color-nav-active;
-            bottom: 1px solid $color-nav-active;
-            left: 3px double $color-nav-hover;
-            right: 3px double $color-nav-hover;
-            radius: 25% 15%;
+            family: "Cormorant SC", serif;
+            size: 2pc;
+            weight: 700;
+          }
+          
+          padding:
+          {
+            top: 0;
+            bottom: 0;
+            left: 1pc;
+            right: 1pc;
+          }
+          
+          &:hover,
+          &:focus
+          {
+            background: #000000;
+            color: $color-nav-hover;
+            
+            border:
+            {
+              top: 1px solid $color-nav-hover;
+              bottom: 1px solid $color-nav-hover;
+              left: 3px double $color-nav-hover;
+              right: 3px double $color-nav-hover;
+              radius: 25% 15%;
+            }
+          }
+          
+          &:active
+          {
+            background: #000000;
+            color: $color-nav-active;
+            
+            border:
+            {
+              top: 1px solid $color-nav-active;
+              bottom: 1px solid $color-nav-active;
+              left: 3px double $color-nav-hover;
+              right: 3px double $color-nav-hover;
+              radius: 25% 15%;
+            }
           }
         }
       }

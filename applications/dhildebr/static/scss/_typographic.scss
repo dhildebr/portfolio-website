@@ -125,9 +125,25 @@ img
   @include user-select(none);
 }
 
-img.float-left   { float: left;   }
-img.float-center { float: center; }
-img.float-right  { float: right;  }
+img.float-left  { float: left;  }
+img.float-right { float: right; }
+
+img.self-portrait
+{
+  @media only screen and (max-width: 720px)
+  {
+    display: block;
+    float: none;
+    
+    margin:
+    {
+      top: 10px;
+      bottom: 10px;
+      left: auto;
+      right: auto;
+    }
+  }
+}
 
 video
 {
