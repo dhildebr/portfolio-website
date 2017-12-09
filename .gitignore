@@ -1,4 +1,5 @@
 ./applications/dhildebr/errors/
+./applications/dhildebr/static/.sass-cache/
 ./examples/
 ./extras/
 ./logs/
