@@ -209,3 +209,15 @@ html.no-js .hidden-if-no-js
 {
   display:none;
 }
+
+span.aria-pronunciation-aid
+{
+  left: -1024px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: -1024px;
+  width: 1px;
+  
+  @include user-select(none);
+}
