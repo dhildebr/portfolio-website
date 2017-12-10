@@ -38,14 +38,14 @@ body
   
   @media only screen and (orientation:portrait)
   {
-    background-image: url("../images/backgrounds/Background_Main_Portrait@1x");
+    background-image: url("../images/backgrounds/Background_Main_Portrait@1x.jpg");
     
     @media only screen and (   min--moz-device-pixel-ratio: 2),
            only screen and (     -o-min-device-pixel-ratio: 2),
            only screen and (-webkit-min-device-pixel-ratio: 2),
            only screen and (        min-device-pixel-ratio: 2)
     {
-      background-image: url("../images/backgrounds/Background_Main_Portrait@1x");
+      background-image: url("../images/backgrounds/Background_Main_Portrait@1x.jpg");
     }
   }
 }
