@@ -1,11 +1,23 @@
-./applications/dhildebr/errors/
-./applications/dhildebr/static/.sass-cache/
-./examples/
-./extras/
-./logs/
+### Directories ###
+.DS_Store/
+applications/dhildebr/errors/
+applications/dhildebr/static/.sass-cache/
+examples/
+extras/
+logs/
 
+### Groups of files ###
+*.DS_Store
+*.pyc
+*.pyd
+*.pyo
+*.w2p
+
+### Files in any directory ###
+Thumbs.db
+
+### Specific files ###
 ./CHANGELOG
 ./httpserver.log
 ./httpserver.pid
 ./parameters_8000.py
-./welcome.w2p
