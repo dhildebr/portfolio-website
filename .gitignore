@@ -20,4 +20,4 @@ Thumbs.db
 ./CHANGELOG
 ./httpserver.log
 ./httpserver.pid
-./parameters_8000.py
+./parameters_*.py
