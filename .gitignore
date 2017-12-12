@@ -17,12 +17,12 @@ applications/*/static/.sass-cache/
 *.pyd
 *.pyo
 *.w2p
-./parameters_*.py
+parameters_*.py
 
 ### Files in any directory ###
 Thumbs.db
 
 ### Specific files ###
-./CHANGELOG
-./httpserver.log
-./httpserver.pid
+CHANGELOG
+httpserver.log
+httpserver.pid
