@@ -1,10 +1,15 @@
 ### Directories ###
 .DS_Store/
-applications/dhildebr/errors/
-applications/dhildebr/static/.sass-cache/
+.idea/
 examples/
 extras/
 logs/
+site-packages/
+
+### Applications ###
+applications/*/errors/
+applications/*/static/sessions/
+applications/*/static/.sass-cache/
 
 ### Groups of files ###
 *.DS_Store
@@ -12,6 +17,7 @@ logs/
 *.pyd
 *.pyo
 *.w2p
+./parameters_*.py
 
 ### Files in any directory ###
 Thumbs.db
@@ -20,4 +26,3 @@ Thumbs.db
 ./CHANGELOG
 ./httpserver.log
 ./httpserver.pid
-./parameters_*.py
