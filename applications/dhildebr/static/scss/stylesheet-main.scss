@@ -22,30 +22,78 @@ body
   {
     attachment: fixed;
     color: #000000;
-    image: url("../images/backgrounds/Background_Main_Landscape@1x.jpg");
+    image: url("../images/backgrounds/BackgroundMain_Landscape_2560@1x.jpg");
     position: center;
     repeat: no-repeat;
     size: cover;
   }
+  
+  @media only screen and (max-width: 1920px)
+  { background-image: url("../images/backgrounds/BackgroundMain_Landscape_1920@1x.jpg"); }
+  
+  @media only screen and (max-width: 1600px)
+  { background-image: url("../images/backgrounds/BackgroundMain_Landscape_1600@1x.jpg"); }
+  
+  @media only screen and (max-width: 1440px)
+  { background-image: url("../images/backgrounds/BackgroundMain_Landscape_1440@1x.jpg"); }
+  
+  @media only screen and (max-width: 1280px)
+  { background-image: url("../images/backgrounds/BackgroundMain_Landscape_1280@1x.jpg"); }
   
   @media only screen and (   min--moz-device-pixel-ratio: 2),
          only screen and (     -o-min-device-pixel-ratio: 2),
          only screen and (-webkit-min-device-pixel-ratio: 2),
          only screen and (        min-device-pixel-ratio: 2)
   {
-    background-image: url("../images/backgrounds/Background_Main_Landscape@2x.jpg");
+    background-image: url("../images/backgrounds/BackgroundMain_Landscape_2560@2x.jpg");
+    
+    @media only screen and (max-width: 1920px)
+    { background-image: url("../images/backgrounds/BackgroundMain_Landscape_1920@2x.jpg"); }
+    
+    @media only screen and (max-width: 1600px)
+    { background-image: url("../images/backgrounds/BackgroundMain_Landscape_1600@2x.jpg"); }
+    
+    @media only screen and (max-width: 1440px)
+    { background-image: url("../images/backgrounds/BackgroundMain_Landscape_1440@2x.jpg"); }
+    
+    @media only screen and (max-width: 1280px)
+    { background-image: url("../images/backgrounds/BackgroundMain_Landscape_1280@2x.jpg"); }
   }
   
   @media only screen and (orientation:portrait)
   {
-    background-image: url("../images/backgrounds/Background_Main_Portrait@1x.jpg");
+    background-image: url("../images/backgrounds/BackgroundMain_Portrait_2560@1x.jpg");
+    
+    @media only screen and (max-height: 1920px)
+    { background-image: url("../images/backgrounds/BackgroundMain_Portrait_1920@1x.jpg"); }
+    
+    @media only screen and (max-height: 1600px)
+    { background-image: url("../images/backgrounds/BackgroundMain_Portrait_1600@1x.jpg"); }
+    
+    @media only screen and (max-height: 1440px)
+    { background-image: url("../images/backgrounds/BackgroundMain_Portrait_1440@1x.jpg"); }
+    
+    @media only screen and (max-height: 1280px)
+    { background-image: url("../images/backgrounds/BackgroundMain_Portrait_1280@1x.jpg"); }
     
     @media only screen and (   min--moz-device-pixel-ratio: 2),
            only screen and (     -o-min-device-pixel-ratio: 2),
            only screen and (-webkit-min-device-pixel-ratio: 2),
            only screen and (        min-device-pixel-ratio: 2)
     {
-      background-image: url("../images/backgrounds/Background_Main_Portrait@1x.jpg");
+      background-image: url("../images/backgrounds/BackgroundMain_Portrait_2560@2x.jpg");
+      
+      @media only screen and (max-height: 1920px)
+      { background-image: url("../images/backgrounds/BackgroundMain_Portrait_1920@2x.jpg"); }
+      
+      @media only screen and (max-height: 1600px)
+      { background-image: url("../images/backgrounds/BackgroundMain_Portrait_1600@2x.jpg"); }
+      
+      @media only screen and (max-height: 1440px)
+      { background-image: url("../images/backgrounds/BackgroundMain_Portrait_1440@2x.jpg"); }
+      
+      @media only screen and (max-height: 1280px)
+      { background-image: url("../images/backgrounds/BackgroundMain_Portrait_1280@2x.jpg"); }
     }
   }
 }
