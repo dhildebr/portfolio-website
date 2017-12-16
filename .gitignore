@@ -1,15 +1,18 @@
-### Directories ###
+### Groups of Directories ###
+applications/*/errors/
+applications/*/static/sessions/
+applications/*/static/.sass-cache/
+
+### Directories at any level ###
+**/.xcf/
+
+### Specific Directories ###
 .DS_Store/
 .idea/
 examples/
 extras/
 logs/
 site-packages/
-
-### Applications ###
-applications/*/errors/
-applications/*/static/sessions/
-applications/*/static/.sass-cache/
 
 ### Groups of files ###
 *.DS_Store
