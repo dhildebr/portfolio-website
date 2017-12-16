@@ -26,6 +26,6 @@ parameters_*.py
 Thumbs.db
 
 ### Specific files ###
-CHANGELOG
-httpserver.log
-httpserver.pid
+/CHANGELOG
+/httpserver.log
+/httpserver.pid
