@@ -266,11 +266,9 @@ html.no-js .hidden-if-no-js
 
 span.aria-pronunciation-aid
 {
-  left: -1024px;
+  font-size: 0;
   height: 1px;
   overflow: hidden;
-  position: absolute;
-  top: -1024px;
   width: 1px;
   
   @include user-select(none);
