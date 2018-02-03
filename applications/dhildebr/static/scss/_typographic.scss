@@ -130,6 +130,8 @@ img.float-right { float: right; }
 
 img.self-portrait
 {
+  border-radius: 7.5%;
+  
   @media only screen and (max-width: 720px)
   {
     display: block;
