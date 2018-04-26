@@ -103,6 +103,13 @@ em
   }
 }
 
+code,
+kbd,
+tt
+{
+  font-family: "Ubuntu Momo", monospace;
+}
+
 ::selection
 {
   background: $color-selection-background;
